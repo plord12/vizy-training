@@ -67,11 +67,45 @@ def copy_images(source, destination):
     return dirs
 
 #
+# label images if missing
+#
+def label_img(data_dir):
+    #
+    # copy to tmp dir first so we only edit necessary files
+    #
+    tmp_data_dir = Path('images/tmp')
+    with open('classes.txt', "w") as file_out:
+        for name in classes.keys():
+            print (name, file=file_out)
+    for thisdirpath, subdirs, files in os.walk(data_dir):
+        for file in files:
+            if file.endswith(".jpg"):
+                xml=os.path.splitext(file)[0]+'.xml'
+                print(str(file)+' '+str(xml))
+                if not os.path.isfile(os.path.join(thisdirpath, xml)):
+                    os.makedirs(tmp_data_dir, exist_ok=True)    
+                    shutil.copyfile(os.path.join(thisdirpath, file), os.path.join(tmp_data_dir, file))
+
+    if os.path.exists(tmp_data_dir):
+        os.system('labelImg '+str(tmp_data_dir)+' classes.txt')
+        for thisdirpath, subdirs, files in os.walk(tmp_data_dir):
+            for file in files:
+                if file.endswith(".xml"):
+                    source = os.path.join(thisdirpath, file)
+                    dest = os.path.join(data_dir, file)
+                    os.makedirs(os.path.dirname(dest), exist_ok=True)
+                    with open(source,'r') as file_in:
+                        with open(dest, "w") as file_out:
+                            for line in file_in:
+                                newline = re.sub('<path>'+os.path.join(os.getcwd(), tmp_data_dir), '<path>'+str(data_dir), line)
+                                print (newline, end = "", file=file_out)
+        shutil.rmtree(tmp_data_dir)
+
+#
 # main parameters
 #
 training_data_dir = Path('images/training')
 validation_data_dir = Path('images/validation')
-tmp_data_dir = Path('images/tmp')
 boundingbox_data_dir = Path('boundingbox')
 
 #
@@ -96,34 +130,8 @@ shutil.copytree(boundingbox_data_dir, 'images', dirs_exist_ok=True)
 #
 # run labelImg
 #
-# copy to tmp dir first so we only edit necessary files
-#
-with open('classes.txt', "w") as file_out:
-    for name in classes.keys():
-        print (name, file=file_out)
-for thisdirpath, subdirs, files in os.walk(training_data_dir):
-    for file in files:
-        if file.endswith(".jpg"):
-            xml=os.path.splitext(file)[0]+'.xml'
-            print(str(file)+' '+str(xml))
-            if not os.path.isfile(os.path.join(thisdirpath, xml)):
-                os.makedirs(tmp_data_dir, exist_ok=True)    
-                shutil.copyfile(os.path.join(thisdirpath, file), os.path.join(tmp_data_dir, file))
-
-if os.path.exists(tmp_data_dir):
-    os.system('labelImg '+str(tmp_data_dir)+' classes.txt')
-    for thisdirpath, subdirs, files in os.walk(tmp_data_dir):
-        for file in files:
-            if file.endswith(".xml"):
-                source = os.path.join(thisdirpath, file)
-                dest = os.path.join(training_data_dir, file)
-                os.makedirs(os.path.dirname(dest), exist_ok=True)
-                with open(source,'r') as file_in:
-                    with open(dest, "w") as file_out:
-                        for line in file_in:
-                            newline = re.sub('<path>'+os.path.join(os.getcwd(), tmp_data_dir), '<path>'+str(training_data_dir), line)
-                            print (newline, end = "", file=file_out)
-    shutil.rmtree(tmp_data_dir)
+label_img(training_data_dir)
+label_img(validation_data_dir)
 
 #
 # backup xml (for any further data prep runs)
