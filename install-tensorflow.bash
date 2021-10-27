@@ -43,6 +43,9 @@ cd ${tensordir}/..
 
 pip install labelImg
 
+mkdir ${tensordir}/scripts
+curl https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/_downloads/da4babe668a8afb093cc7776d7e630f3/generate_tfrecord.py -o ${tensordir}/scripts/generate_tfrecord.py
+
 #
 # validate environment
 #

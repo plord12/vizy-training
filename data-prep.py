@@ -60,16 +60,18 @@ def copy_images(source, destination):
     # people
     #
 
+    os.makedirs(destination, exist_ok=True)
     for name, directory in dirs.items():
-        os.makedirs(os.path.join(destination, name), exist_ok=True)
-        shutil.copytree(os.path.join(source, directory), os.path.join(destination, name), dirs_exist_ok=True)
+        shutil.copytree(os.path.join(source, directory), destination, dirs_exist_ok=True)
 
+    return dirs
 
 #
 # main parameters
 #
 training_data_dir = Path('images/training')
 validation_data_dir = Path('images/validation')
+tmp_data_dir = Path('images/tmp')
 boundingbox_data_dir = Path('boundingbox')
 
 #
@@ -82,7 +84,7 @@ download_extract_tgz('https://ml-inat-competition-datasets.s3.amazonaws.com/2021
 #
 # extract images we are interested in
 #
-copy_images('train', training_data_dir);
+classes = copy_images('train', training_data_dir);
 copy_images('val', validation_data_dir);
 
 #
@@ -92,42 +94,64 @@ print ('Copying bounding box xml data')
 shutil.copytree(boundingbox_data_dir, 'images', dirs_exist_ok=True)
 
 #
-# run labelImg if any missing xml
+# run labelImg
 #
-needlabel = {}
-for dirpath, subdirs, files in os.walk(training_data_dir):
+# copy to tmp dir first so we only edit necessary files
+#
+with open('classes.txt', "w") as file_out:
+    for name in classes.keys():
+        print (name, file=file_out)
+for thisdirpath, subdirs, files in os.walk(training_data_dir):
     for file in files:
         if file.endswith(".jpg"):
-            xml = os.path.join(dirpath, file).rsplit('.', 1)[0] + '.xml'
-            if not os.path.isfile(xml):
-                needlabel[dirpath] = 'true'
+            xml=os.path.splitext(file)[0]+'.xml'
+            print(str(file)+' '+str(xml))
+            if not os.path.isfile(os.path.join(thisdirpath, xml)):
+                os.makedirs(tmp_data_dir, exist_ok=True)    
+                shutil.copyfile(os.path.join(thisdirpath, file), os.path.join(tmp_data_dir, file))
 
-for dirpath in needlabel.keys():
-    print (dirpath)
-    os.system('labelImg "'+dirpath+'"')
-
-    #
-    # fix and copy xml
-    #
-    for thisdirpath, subdirs, files in os.walk(dirpath):
+if os.path.exists(tmp_data_dir):
+    os.system('labelImg '+str(tmp_data_dir)+' classes.txt')
+    for thisdirpath, subdirs, files in os.walk(tmp_data_dir):
         for file in files:
             if file.endswith(".xml"):
                 source = os.path.join(thisdirpath, file)
-                dest = os.path.join(boundingbox_data_dir, os.path.join(*(source.split(os.path.sep)[1:])))
-                print('Backing up '+source+' to '+dest)
+                dest = os.path.join(training_data_dir, file)
                 os.makedirs(os.path.dirname(dest), exist_ok=True)
                 with open(source,'r') as file_in:
                     with open(dest, "w") as file_out:
                         for line in file_in:
-                            newline = re.sub('<name>.*</name>', '<name>'+os.path.basename(thisdirpath)+'</name>', line)
-                            newline = re.sub('<path>'+os.getcwd()+os.path.sep, '<path>', newline)
+                            newline = re.sub('<path>'+os.path.join(os.getcwd(), tmp_data_dir), '<path>'+str(training_data_dir), line)
                             print (newline, end = "", file=file_out)
+    shutil.rmtree(tmp_data_dir)
 
+#
+# backup xml (for any further data prep runs)
+#
+for thisdirpath, subdirs, files in os.walk('images'):
+    for file in files:
+        if file.endswith(".xml"):
+            source = os.path.join(thisdirpath, file)
+            dest = os.path.join(boundingbox_data_dir, os.path.join(*(source.split(os.path.sep)[1:])))
+            print('Backing up '+source+' to '+dest)
+            os.makedirs(os.path.dirname(dest), exist_ok=True)
+            shutil.copy(source, dest)
 
 #
 # create label map
 #
+count=1
+with open('label_map.pbtxt', "w") as file_out:
+    for name in classes.keys():
+        print ('item {', file=file_out)
+        print ('    id: '+str(count), file=file_out)
+        print ('    name: \''+name+'\'', file=file_out)
+        print ('}', file=file_out)
+        count=count+1
 
 #
 # create TensorFlow records from xml
+#
+# python Tensorflow/scripts/generate_tfrecord.py -x images/training/ -l label_map.pbtxt -o training.tfrecord
+# 
 #
