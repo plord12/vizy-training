@@ -1,6 +1,6 @@
-# Vizi cam training
+# Vizy cam training
 
-An attempt to train vizicam with UK birds + animals
+An attempt to train vizycam with UK birds + animals
 
 Data sets :
 
@@ -28,10 +28,10 @@ Steps will probabally be :
 
 Directories used :
 
-    Tensorflow - installed tensorflow binaries
-    train - training dataset download directory
-    val - training dataset download directory
-    boundingbox - source of bounding box data
-    images/training - training images ready to be used
-    images/validation - validation images ready to be used
+* Tensorflow - installed tensorflow binaries
+* train - training dataset download directory
+* val - training dataset download directory
+* boundingbox - source of bounding box data
+* images/training - training images ready to be used
+* images/validation - validation images ready to be used
 
