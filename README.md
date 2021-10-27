@@ -34,4 +34,3 @@ Directories used :
 * boundingbox - source of bounding box data
 * images/training - training images ready to be used
 * images/validation - validation images ready to be used
-
