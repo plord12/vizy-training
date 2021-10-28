@@ -30,7 +30,10 @@ def setup_model(basedir, model):
     if not os.path.exists(destdir):
         print ("Setting up "+destdir)
         os.makedirs(destdir)
-        shutil.copytree(os.path.join(sourcedir, 'checkpoint'), os.path.join(destdir, 'checkpoint'))
+        classes = 0
+        with open('classes.txt','r') as file_in:
+            for line in file_in:
+                classes=classes+1
         with open(os.path.join(sourcedir, 'pipeline.config'),'r') as file_in:
             with open(os.path.join(destdir, 'pipeline.config'), 'w') as file_out:
                 intrain = False
@@ -44,9 +47,8 @@ def setup_model(basedir, model):
                         ineval = True
                     # FIX THIS - probabally depends on available memory.  512 is too big
                     line = re.sub('batch_size: [0-9]*', 'batch_size: 128', line)
-                    # FIX THIS - work out number of classes
-                    line = re.sub('num_classes: [0-9]*', 'num_classes: 2', line)
-                    line = re.sub('fine_tune_checkpoint: "[^"]*"', 'fine_tune_checkpoint: "'+os.path.join(destdir, 'checkpoint', 'ckpt-0')+'"', line)
+                    line = re.sub('num_classes: [0-9]*', 'num_classes: '+str(classes), line)
+                    line = re.sub('fine_tune_checkpoint: "[^"]*"', 'fine_tune_checkpoint: "'+os.path.join(sourcedir, 'checkpoint', 'ckpt-0')+'"', line)
                     line = re.sub('fine_tune_checkpoint_type: "[^"]*"', 'fine_tune_checkpoint_type: "detection"', line)
                     line = re.sub('label_map_path: "[^"]*"', 'label_map_path: "label_map.pbtxt"', line)
                     if intrain:
