@@ -160,6 +160,7 @@ with open('label_map.pbtxt', "w") as file_out:
 #
 # create TensorFlow records from xml
 #
-# python Tensorflow/scripts/generate_tfrecord.py -x images/training/ -l label_map.pbtxt -o training.tfrecord
-# 
-#
+os.system('python Tensorflow/scripts/generate_tfrecord.py -x images/training/ -l label_map.pbtxt -o training.tfrecord')
+os.system('python Tensorflow/scripts/generate_tfrecord.py -x images/validation/ -l label_map.pbtxt -o validation.tfrecord')
+
+

@@ -24,7 +24,7 @@ Steps will probabally be :
     ./install-tensorflow.bash
     . Tensorflow/tf2_api_env/bin/activate
     ./data-prep.py
-    ....
+    ./train.py
 
 Directories used :
 
@@ -34,4 +34,5 @@ Directories used :
 * boundingbox - source of bounding box data
 * images/training - training images ready to be used
 * images/validation - validation images ready to be used
+* models - tensorflow models and where training happens
 
