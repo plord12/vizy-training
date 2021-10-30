@@ -13,7 +13,7 @@ Included are :
 * House Sparrow :heavy_check_mark:
 * Blue Tit :heavy_check_mark:
 * European Starling :heavy_check_mark:
-* Eurasian Blackbird
+* Eurasian Blackbird :heavy_check_mark:
 * Wood Pigeon
 * European Robin
 * Great Tit
