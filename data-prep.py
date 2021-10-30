@@ -33,7 +33,7 @@ def copy_images(source, destination):
     dirs = {}
     dirs['House Sparrow'] = '04132_Animalia_Chordata_Aves_Passeriformes_Passeridae_Passer_diffusus'
     dirs['Blue Tit'] = '04031_Animalia_Chordata_Aves_Passeriformes_Paridae_Cyanistes_caeruleus'
-    #dirs['European Starling'] = '04202_Animalia_Chordata_Aves_Passeriformes_Sturnidae_Sturnus_vulgaris'
+    dirs['European Starling'] = '04202_Animalia_Chordata_Aves_Passeriformes_Sturnidae_Sturnus_vulgaris'
     #dirs['Eurasian Blackbird'] = '04284_Animalia_Chordata_Aves_Passeriformes_Turdidae_Turdus_merula'
     #dirs['Wood Pigeon'] = '03516_Animalia_Chordata_Aves_Columbiformes_Columbidae_Columba_palumbus'
     #dirs['European Robin'] = '03978_Animalia_Chordata_Aves_Passeriformes_Muscicapidae_Erithacus_rubecula'

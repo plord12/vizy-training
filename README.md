@@ -12,7 +12,7 @@ Included are :
 
 * House Sparrow :heavy_check_mark:
 * Blue Tit :heavy_check_mark:
-* European Starling
+* European Starling :heavy_check_mark:
 * Eurasian Blackbird
 * Wood Pigeon
 * European Robin
@@ -32,6 +32,8 @@ Common garden animals :
 * Red Fox
 * Eastern Gray Squirrel
 * Domestic Cat :heavy_check_mark:
+
+( :heavy_check_mark: indicates bounding boxes created )
 
 ## Tensor flow on mac :
 
