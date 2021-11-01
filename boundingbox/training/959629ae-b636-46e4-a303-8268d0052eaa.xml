@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>959629ae-b636-46e4-a303-8268d0052eaa.jpg</filename>
+	<path>images/training/959629ae-b636-46e4-a303-8268d0052eaa.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>375</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>European Robin</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>374</xmin>
+			<ymin>14</ymin>
+			<xmax>450</xmax>
+			<ymax>78</ymax>
+		</bndbox>
+	</object>
+</annotation>
