@@ -9,6 +9,7 @@ import tarfile
 import os.path
 import shutil
 import re
+import glob
 from pathlib import Path
 
 #
@@ -62,7 +63,8 @@ def copy_images(source, destination):
 
     os.makedirs(destination, exist_ok=True)
     for name, directory in dirs.items():
-        shutil.copytree(os.path.join(source, directory), destination, dirs_exist_ok=True)
+        for filename in glob.glob(os.path.join(source, directory, '*.*')):
+            shutil.copy(filename, destination)
 
     return dirs
 
@@ -125,7 +127,10 @@ copy_images('val', validation_data_dir);
 # copy any bounding boxes in
 #
 print ('Copying bounding box xml data')
-shutil.copytree(boundingbox_data_dir, 'images', dirs_exist_ok=True)
+for filename in glob.glob(os.path.join(boundingbox_data_dir, 'training', '*.*')):
+  shutil.copy(filename, training_data_dir)
+for filename in glob.glob(os.path.join(boundingbox_data_dir, 'validation', '*.*')):
+  shutil.copy(filename, validation_data_dir)
 
 #
 # run labelImg

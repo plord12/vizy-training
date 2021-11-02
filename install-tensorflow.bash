@@ -51,4 +51,3 @@ curl https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/_
 #
 . Tensorflow/tf2_api_env/bin/activate
 python Tensorflow/models/research/object_detection/builders/model_builder_tf2_test.py
-python Tensorflow/models/research/object_detection/model_main_tf2.py --help
