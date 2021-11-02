@@ -16,7 +16,7 @@ Included are :
 * Eurasian Blackbird :heavy_check_mark:
 * Wood Pigeon :heavy_check_mark:
 * European Robin :heavy_check_mark:
-* Great Tit
+* Great Tit :heavy_check_mark:
 * Eurasian Goldfinch
 * Eurasian Magpie
 * Long-tailed Tit
