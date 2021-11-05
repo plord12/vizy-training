@@ -38,8 +38,8 @@ def copy_images(source, destination):
     dirs['Eurasian Blackbird'] = '04284_Animalia_Chordata_Aves_Passeriformes_Turdidae_Turdus_merula'
     dirs['Wood Pigeon'] = '03516_Animalia_Chordata_Aves_Columbiformes_Columbidae_Columba_palumbus'
     dirs['European Robin'] = '03978_Animalia_Chordata_Aves_Passeriformes_Muscicapidae_Erithacus_rubecula'
-    #dirs['Great Tit'] = '04034_Animalia_Chordata_Aves_Passeriformes_Paridae_Parus_major'
-    #dirs['Eurasian Goldfinch'] = '03809_Animalia_Chordata_Aves_Passeriformes_Fringillidae_Carduelis_carduelis'
+    dirs['Great Tit'] = '04034_Animalia_Chordata_Aves_Passeriformes_Paridae_Parus_major'
+    dirs['Eurasian Goldfinch'] = '03809_Animalia_Chordata_Aves_Passeriformes_Fringillidae_Carduelis_carduelis'
     #dirs['Eurasian Magpie'] = '03775_Animalia_Chordata_Aves_Passeriformes_Corvidae_Pica_pica'
     #dirs['Long-tailed Tit'] = '03688_Animalia_Chordata_Aves_Passeriformes_Aegithalidae_Aegithalos_caudatus'
 
