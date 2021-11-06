@@ -18,7 +18,7 @@ Included are :
 * European Robin :heavy_check_mark:
 * Great Tit :heavy_check_mark:
 * Eurasian Goldfinch :heavy_check_mark:
-* Eurasian Magpie
+* Eurasian Magpie :heavy_check_mark:
 * Long-tailed Tit
 
 Extra birds :

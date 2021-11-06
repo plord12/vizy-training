@@ -40,7 +40,7 @@ def copy_images(source, destination):
     dirs['European Robin'] = '03978_Animalia_Chordata_Aves_Passeriformes_Muscicapidae_Erithacus_rubecula'
     dirs['Great Tit'] = '04034_Animalia_Chordata_Aves_Passeriformes_Paridae_Parus_major'
     dirs['Eurasian Goldfinch'] = '03809_Animalia_Chordata_Aves_Passeriformes_Fringillidae_Carduelis_carduelis'
-    #dirs['Eurasian Magpie'] = '03775_Animalia_Chordata_Aves_Passeriformes_Corvidae_Pica_pica'
+    dirs['Eurasian Magpie'] = '03775_Animalia_Chordata_Aves_Passeriformes_Corvidae_Pica_pica'
     #dirs['Long-tailed Tit'] = '03688_Animalia_Chordata_Aves_Passeriformes_Aegithalidae_Aegithalos_caudatus'
 
     #
@@ -83,7 +83,6 @@ def label_img(data_dir):
         for file in files:
             if file.endswith(".jpg"):
                 xml=os.path.splitext(file)[0]+'.xml'
-                print(str(file)+' '+str(xml))
                 if not os.path.isfile(os.path.join(thisdirpath, xml)):
                     os.makedirs(tmp_data_dir, exist_ok=True)    
                     shutil.copyfile(os.path.join(thisdirpath, file), os.path.join(tmp_data_dir, file))
@@ -146,9 +145,10 @@ for thisdirpath, subdirs, files in os.walk('images'):
         if file.endswith(".xml"):
             source = os.path.join(thisdirpath, file)
             dest = os.path.join(boundingbox_data_dir, os.path.join(*(source.split(os.path.sep)[1:])))
-            print('Backing up '+source+' to '+dest)
-            os.makedirs(os.path.dirname(dest), exist_ok=True)
-            shutil.copy(source, dest)
+            if not os.path.exists(dest):
+                print('Backing up '+source+' to '+dest)
+                os.makedirs(os.path.dirname(dest), exist_ok=True)
+                shutil.copy(source, dest)
 
 #
 # create label map
