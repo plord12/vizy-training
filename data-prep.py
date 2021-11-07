@@ -46,7 +46,7 @@ def copy_images(source, destination):
     #
     # extra birds
     #
-    #dirs['Red Kite'] = '03172_Animalia_Chordata_Aves_Accipitriformes_Accipitridae_Milvus_milvus'
+    dirs['Red Kite'] = '03172_Animalia_Chordata_Aves_Accipitriformes_Accipitridae_Milvus_milvus'
     #dirs['Grey Heron'] = '04356_Animalia_Chordata_Aves_Pelecaniformes_Ardeidae_Ardea_cinerea'
 
     #
