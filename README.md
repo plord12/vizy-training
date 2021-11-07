@@ -24,7 +24,7 @@ Included are :
 Extra birds :
 
 * Red Kite :heavy_check_mark:
-* Grey Heron
+* Grey Heron :heavy_check_mark:
 
 Common garden animals :
 
