@@ -19,7 +19,7 @@ Included are :
 * Great Tit :heavy_check_mark:
 * Eurasian Goldfinch :heavy_check_mark:
 * Eurasian Magpie :heavy_check_mark:
-* Long-tailed Tit
+* Long-tailed Tit :heavy_check_mark:
 
 Extra birds :
 

@@ -41,7 +41,7 @@ def copy_images(source, destination):
     dirs['Great Tit'] = '04034_Animalia_Chordata_Aves_Passeriformes_Paridae_Parus_major'
     dirs['Eurasian Goldfinch'] = '03809_Animalia_Chordata_Aves_Passeriformes_Fringillidae_Carduelis_carduelis'
     dirs['Eurasian Magpie'] = '03775_Animalia_Chordata_Aves_Passeriformes_Corvidae_Pica_pica'
-    #dirs['Long-tailed Tit'] = '03688_Animalia_Chordata_Aves_Passeriformes_Aegithalidae_Aegithalos_caudatus'
+    dirs['Long-tailed Tit'] = '03688_Animalia_Chordata_Aves_Passeriformes_Aegithalidae_Aegithalos_caudatus'
 
     #
     # extra birds
