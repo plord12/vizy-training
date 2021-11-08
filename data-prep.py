@@ -52,7 +52,7 @@ def copy_images(source, destination):
     #
     # common garden animals
     #
-    #dirs['Common Hedgehog'] = '04745_Animalia_Chordata_Mammalia_Eulipotyphla_Erinaceidae_Erinaceus_europaeus'
+    dirs['Common Hedgehog'] = '04745_Animalia_Chordata_Mammalia_Eulipotyphla_Erinaceidae_Erinaceus_europaeus'
     #dirs['Red Fox'] = '04677_Animalia_Chordata_Mammalia_Carnivora_Canidae_Vulpes_vulpes'
     #dirs['Eastern Gray Squirrel'] = '04844_Animalia_Chordata_Mammalia_Rodentia_Sciuridae_Sciurus_carolinensis'
     dirs['Domestic Cat'] = '04679_Animalia_Chordata_Mammalia_Carnivora_Felidae_Felis_catus'

@@ -28,7 +28,7 @@ Extra birds :
 
 Common garden animals :
 
-* Common Hedgehog
+* Common Hedgehog :heavy_check_mark:
 * Red Fox
 * Eastern Gray Squirrel
 * Domestic Cat :heavy_check_mark:
