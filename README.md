@@ -30,7 +30,7 @@ Common garden animals :
 
 * Common Hedgehog :heavy_check_mark:
 * Red Fox :heavy_check_mark:
-* Eastern Gray Squirrel
+* Eastern Gray Squirrel :heavy_check_mark:
 * Domestic Cat :heavy_check_mark:
 
 ( :heavy_check_mark: indicates bounding boxes created )
