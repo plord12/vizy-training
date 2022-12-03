@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>8a3f2fe4-c0d4-4cac-95be-c29585b419f3.jpg</filename>
+	<path>images/training/8a3f2fe4-c0d4-4cac-95be-c29585b419f3.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>333</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Eurasian_Blackbird</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>188</xmin>
+			<ymin>28</ymin>
+			<xmax>324</xmax>
+			<ymax>312</ymax>
+		</bndbox>
+	</object>
+</annotation>

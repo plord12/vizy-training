@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>95250c93-698a-43b3-b972-e5041a921d59.jpg</filename>
+	<path>images/training/95250c93-698a-43b3-b972-e5041a921d59.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>375</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Great_Tit</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>146</xmin>
+			<ymin>224</ymin>
+			<xmax>272</xmax>
+			<ymax>355</ymax>
+		</bndbox>
+	</object>
+</annotation>

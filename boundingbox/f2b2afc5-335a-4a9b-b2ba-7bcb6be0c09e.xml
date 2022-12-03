@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>f2b2afc5-335a-4a9b-b2ba-7bcb6be0c09e.jpg</filename>
+	<path>images/training/f2b2afc5-335a-4a9b-b2ba-7bcb6be0c09e.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>300</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Long-tailed_Tit</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>132</xmin>
+			<ymin>179</ymin>
+			<xmax>160</xmax>
+			<ymax>199</ymax>
+		</bndbox>
+	</object>
+</annotation>

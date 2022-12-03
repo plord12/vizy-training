@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>15f3f79e-c002-4f01-b11d-96448056f31c.jpg</filename>
+	<path>images/training/15f3f79e-c002-4f01-b11d-96448056f31c.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>332</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Blue_Tit</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>167</xmin>
+			<ymin>59</ymin>
+			<xmax>263</xmax>
+			<ymax>217</ymax>
+		</bndbox>
+	</object>
+</annotation>

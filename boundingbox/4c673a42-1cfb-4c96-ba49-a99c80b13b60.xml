@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>4c673a42-1cfb-4c96-ba49-a99c80b13b60.jpg</filename>
+	<path>images/training/4c673a42-1cfb-4c96-ba49-a99c80b13b60.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>281</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Eurasian_Magpie</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>69</xmin>
+			<ymin>213</ymin>
+			<xmax>184</xmax>
+			<ymax>262</ymax>
+		</bndbox>
+	</object>
+</annotation>

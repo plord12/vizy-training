@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>19e9e03d-673a-49a7-ac73-f5160bb79aaf.jpg</filename>
+	<path>images/training/19e9e03d-673a-49a7-ac73-f5160bb79aaf.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>375</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Eastern_Gray_Squirrel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>98</xmin>
+			<ymin>160</ymin>
+			<xmax>145</xmax>
+			<ymax>220</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>29b74314-9eaa-410c-a72b-a8b2ca060617.jpg</filename>
+	<path>images/training/29b74314-9eaa-410c-a72b-a8b2ca060617.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>333</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Grey_Heron</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>274</xmin>
+			<ymin>59</ymin>
+			<xmax>398</xmax>
+			<ymax>173</ymax>
+		</bndbox>
+	</object>
+</annotation>

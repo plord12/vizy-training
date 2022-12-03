@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>c8c4296a-b610-4f60-8900-71cd800f6a24.jpg</filename>
+	<path>images/validation/c8c4296a-b610-4f60-8900-71cd800f6a24.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>349</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>House_Sparrow</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>18</xmin>
+			<ymin>9</ymin>
+			<xmax>477</xmax>
+			<ymax>316</ymax>
+		</bndbox>
+	</object>
+</annotation>

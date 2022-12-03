@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>07e55d8b-5c6a-447f-9072-305322c892ef.jpg</filename>
+	<path>images/training/07e55d8b-5c6a-447f-9072-305322c892ef.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>375</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Red_Kite</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>143</xmin>
+			<ymin>220</ymin>
+			<xmax>168</xmax>
+			<ymax>255</ymax>
+		</bndbox>
+	</object>
+</annotation>

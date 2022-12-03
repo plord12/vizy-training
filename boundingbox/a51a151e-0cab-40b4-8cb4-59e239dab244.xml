@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>a51a151e-0cab-40b4-8cb4-59e239dab244.jpg</filename>
+	<path>images/validation/a51a151e-0cab-40b4-8cb4-59e239dab244.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>437</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Great_Tit</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>171</xmin>
+			<ymin>170</ymin>
+			<xmax>335</xmax>
+			<ymax>266</ymax>
+		</bndbox>
+	</object>
+</annotation>

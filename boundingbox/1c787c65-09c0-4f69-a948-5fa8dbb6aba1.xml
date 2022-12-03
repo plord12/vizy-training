@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>1c787c65-09c0-4f69-a948-5fa8dbb6aba1.jpg</filename>
+	<path>images/validation/1c787c65-09c0-4f69-a948-5fa8dbb6aba1.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>375</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Domestic_Cat</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>185</xmin>
+			<ymin>59</ymin>
+			<xmax>354</xmax>
+			<ymax>250</ymax>
+		</bndbox>
+	</object>
+</annotation>

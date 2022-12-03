@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>62935c6c-cf37-4881-a36d-9e00a2f6ea2f.jpg</filename>
+	<path>images/training/62935c6c-cf37-4881-a36d-9e00a2f6ea2f.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>368</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Wood_Pigeon</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>115</xmin>
+			<ymin>60</ymin>
+			<xmax>353</xmax>
+			<ymax>269</ymax>
+		</bndbox>
+	</object>
+</annotation>

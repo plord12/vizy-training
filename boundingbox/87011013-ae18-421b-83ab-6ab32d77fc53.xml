@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>87011013-ae18-421b-83ab-6ab32d77fc53.jpg</filename>
+	<path>images/all/87011013-ae18-421b-83ab-6ab32d77fc53.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>375</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Common_Dandelion</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>119</xmin>
+			<ymin>220</ymin>
+			<xmax>215</xmax>
+			<ymax>309</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>ee20f30e-32a2-4d16-8475-eac9ae7532ea.jpg</filename>
+	<path>images/training/ee20f30e-32a2-4d16-8475-eac9ae7532ea.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>375</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Common_Hedgehog</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>35</xmin>
+			<ymin>68</ymin>
+			<xmax>141</xmax>
+			<ymax>209</ymax>
+		</bndbox>
+	</object>
+</annotation>

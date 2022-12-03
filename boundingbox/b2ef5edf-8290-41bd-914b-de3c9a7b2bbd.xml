@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>b2ef5edf-8290-41bd-914b-de3c9a7b2bbd.jpg</filename>
+	<path>images/training/b2ef5edf-8290-41bd-914b-de3c9a7b2bbd.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>375</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>European_Starling</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>201</xmin>
+			<ymin>123</ymin>
+			<xmax>306</xmax>
+			<ymax>245</ymax>
+		</bndbox>
+	</object>
+</annotation>

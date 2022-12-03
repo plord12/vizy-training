@@ -1,0 +1,26 @@
+<annotation>
+	<folder>House Sparrow</folder>
+	<filename>8cd40f81-72e1-4da4-8e88-0b03c697e4ea.jpg</filename>
+	<path>images/training/8cd40f81-72e1-4da4-8e88-0b03c697e4ea.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>375</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>House_Sparrow</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>160</xmin>
+			<ymin>94</ymin>
+			<xmax>457</xmax>
+			<ymax>314</ymax>
+		</bndbox>
+	</object>
+</annotation>

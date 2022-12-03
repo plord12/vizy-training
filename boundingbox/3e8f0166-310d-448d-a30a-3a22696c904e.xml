@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Domestic Cat</folder>
+	<filename>3e8f0166-310d-448d-a30a-3a22696c904e.jpg</filename>
+	<path>images/training/3e8f0166-310d-448d-a30a-3a22696c904e.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>375</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Domestic_Cat</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>117</xmin>
+			<ymin>92</ymin>
+			<xmax>291</xmax>
+			<ymax>352</ymax>
+		</bndbox>
+	</object>
+</annotation>

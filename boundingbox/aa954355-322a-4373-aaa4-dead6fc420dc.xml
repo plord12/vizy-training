@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>aa954355-322a-4373-aaa4-dead6fc420dc.jpg</filename>
+	<path>images/training/aa954355-322a-4373-aaa4-dead6fc420dc.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>375</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Red_Fox</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>169</xmin>
+			<ymin>262</ymin>
+			<xmax>222</xmax>
+			<ymax>299</ymax>
+		</bndbox>
+	</object>
+</annotation>

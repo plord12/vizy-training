@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>9711f4b2-7f5b-4b16-acbf-f4d0b8ccae9f.jpg</filename>
+	<path>images/training/9711f4b2-7f5b-4b16-acbf-f4d0b8ccae9f.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>412</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Eurasian_Goldfinch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>181</xmin>
+			<ymin>169</ymin>
+			<xmax>303</xmax>
+			<ymax>254</ymax>
+		</bndbox>
+	</object>
+</annotation>
