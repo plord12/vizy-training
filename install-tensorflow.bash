@@ -1,22 +1,27 @@
 #!/bin/bash
 
-set -e
+#set -e
+set -x
 
-if [ -d Tensorflow ]
-then
-	rm -rf Tensorflow
-fi
+export PATH="/opt/homebrew/opt/qt5/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/qt@5/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/qt@5/include"
+
+#if [ -d Tensorflow ]
+#then
+#	rm -rf Tensorflow
+#fi
 
 mkdir Tensorflow
 cd Tensorflow
 tensordir=$(pwd)
 
-python3 -m venv tf2_api_env
-. tf2_api_env/bin/activate
-python -m pip install -U pip
+#python3 -m venv tf2_api_env
+#. tf2_api_env/bin/activate
+#python -m pip install -U pip
 
-pip install tensorflow-macos
-pip install tensorflow-metal
+#pip install tensorflow-macos
+#pip install tensorflow-metal
 
 git clone https://github.com/tensorflow/models.git
 

@@ -33,6 +33,10 @@ Common garden animals :
 * Eastern Gray Squirrel :heavy_check_mark:
 * Domestic Cat :heavy_check_mark:
 
+Weeds :
+
+* Common Dandelion :heavy_check_mark:
+
 ( :heavy_check_mark: indicates bounding boxes created )
 
 ## Tensor flow on mac :
@@ -51,12 +55,19 @@ Common garden animals :
 * https://github.com/tensorflow/models/blob/master/research/object_detection/colab_tutorials/eager_few_shot_od_training_tf2_colab.ipynb
 * https://neptune.ai/blog/how-to-train-your-own-object-detector-using-tensorflow-object-detection-api
 
-## To run :
+## To run on mac intel :
 
     ./install-tensorflow.bash
     . Tensorflow/tf2_api_env/bin/activate
     ./data-prep.py
     ./train.py
+
+## To run on mac M1 :
+
+    ./install-tensorflow-macos-m1.sh
+    conda activate tensorflow
+    ./data-prep.py
+    ./train2.py
 
 ## Directories used :
 
