@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>2022_12_09_04:52:00.2083563540.jpg</filename>
+	<path>images/all/2022_12_09_04:52:00.2083563540.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>5888</width>
+		<height>3312</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Red_Fox</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2637</xmin>
+			<ymin>1372</ymin>
+			<xmax>4050</xmax>
+			<ymax>1945</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>2022_12_09_12:30:12.2505539633.jpg</filename>
+	<path>images/all/2022_12_09_12:30:12.2505539633.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>5888</width>
+		<height>3312</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Eurasian_Blackbird</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>4557</xmin>
+			<ymin>1759</ymin>
+			<xmax>4997</xmax>
+			<ymax>2352</ymax>
+		</bndbox>
+	</object>
+</annotation>

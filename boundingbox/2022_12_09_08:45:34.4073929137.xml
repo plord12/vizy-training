@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>2022_12_09_08:45:34.4073929137.jpg</filename>
+	<path>images/all/2022_12_09_08:45:34.4073929137.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>5888</width>
+		<height>3312</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Eurasian_Magpie</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>4150</xmin>
+			<ymin>1339</ymin>
+			<xmax>5297</xmax>
+			<ymax>2412</ymax>
+		</bndbox>
+	</object>
+</annotation>

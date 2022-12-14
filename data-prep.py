@@ -145,12 +145,15 @@ boundingbox_data_dir = Path('boundingbox')
 download_extract_tgz('https://ml-inat-competition-datasets.s3.amazonaws.com/2021/train.tar.gz', 'train')
 download_extract_tgz('https://ml-inat-competition-datasets.s3.amazonaws.com/2021/val.tar.gz', 'val')
 #download_extract_tgz('https://ml-inat-competition-datasets.s3.amazonaws.com/2021/public_test.tar.gz', 'public_test')
+download_extract_tgz('https://plord.co.uk/garden.tgz', 'garden')
 
 #
 # extract images we are interested in
 #
 classes = copy_images('train', all_data_dir);
 copy_images('val', all_data_dir);
+for filename in glob.glob('garden/*'):
+  shutil.copy(filename, all_data_dir)
 
 #
 # copy any bounding boxes in

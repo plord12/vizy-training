@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>2022_11_26_05:49:58.3986105726.jpg</filename>
+	<path>images/all/2022_11_26_05:49:58.3986105726.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>5888</width>
+		<height>3312</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Domestic_Cat</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>564</xmin>
+			<ymin>1099</ymin>
+			<xmax>2004</xmax>
+			<ymax>2092</ymax>
+		</bndbox>
+	</object>
+</annotation>
