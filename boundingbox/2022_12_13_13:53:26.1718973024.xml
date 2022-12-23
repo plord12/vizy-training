@@ -6,8 +6,8 @@
 		<database>Unknown</database>
 	</source>
 	<size>
-		<width>5888</width>
-		<height>3312</height>
+		<width>1024</width>
+		<height>576</height>
 		<depth>3</depth>
 	</size>
 	<segmented>0</segmented>
@@ -17,10 +17,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>824</xmin>
-			<ymin>1852</ymin>
-			<xmax>1290</xmax>
-			<ymax>2092</ymax>
+			<xmin>149</xmin>
+			<ymin>322</ymin>
+			<xmax>216</xmax>
+			<ymax>357</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -29,10 +29,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>2430</xmin>
-			<ymin>1812</ymin>
-			<xmax>2830</xmax>
-			<ymax>2119</ymax>
+			<xmin>424</xmin>
+			<ymin>314</ymin>
+			<xmax>493</xmax>
+			<ymax>366</ymax>
 		</bndbox>
 	</object>
 	<object>
@@ -41,22 +41,22 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>4084</xmin>
-			<ymin>1892</ymin>
-			<xmax>4470</xmax>
-			<ymax>2239</ymax>
+			<xmin>709</xmin>
+			<ymin>332</ymin>
+			<xmax>771</xmax>
+			<ymax>384</ymax>
 		</bndbox>
 	</object>
 	<object>
-		<name>Eurasian_Blackbird</name>
+		<name>European_Starling</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>3944</xmin>
-			<ymin>2265</ymin>
-			<xmax>4517</xmax>
-			<ymax>3139</ymax>
+			<xmin>688</xmin>
+			<ymin>395</ymin>
+			<xmax>781</xmax>
+			<ymax>536</ymax>
 		</bndbox>
 	</object>
 </annotation>

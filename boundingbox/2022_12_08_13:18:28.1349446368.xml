@@ -6,21 +6,21 @@
 		<database>Unknown</database>
 	</source>
 	<size>
-		<width>5888</width>
-		<height>3312</height>
+		<width>1024</width>
+		<height>576</height>
 		<depth>3</depth>
 	</size>
 	<segmented>0</segmented>
 	<object>
 		<name>European_Robin</name>
 		<pose>Unspecified</pose>
-		<truncated>1</truncated>
+		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>4517</xmin>
-			<ymin>699</ymin>
-			<xmax>5888</xmax>
-			<ymax>2045</ymax>
+			<xmin>793</xmin>
+			<ymin>123</ymin>
+			<xmax>1023</xmax>
+			<ymax>355</ymax>
 		</bndbox>
 	</object>
 </annotation>

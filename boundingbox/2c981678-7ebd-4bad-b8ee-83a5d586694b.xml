@@ -17,10 +17,22 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>86</xmin>
-			<ymin>124</ymin>
-			<xmax>186</xmax>
-			<ymax>212</ymax>
+			<xmin>138</xmin>
+			<ymin>138</ymin>
+			<xmax>185</xmax>
+			<ymax>173</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Domestic_Cat</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>324</xmin>
+			<ymin>146</ymin>
+			<xmax>409</xmax>
+			<ymax>222</ymax>
 		</bndbox>
 	</object>
 </annotation>

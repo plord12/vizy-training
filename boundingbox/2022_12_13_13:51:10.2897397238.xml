@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>2022_12_13_13:51:10.2897397238.jpg</filename>
+	<path>images/all/2022_12_13_13:51:10.2897397238.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1024</width>
+		<height>576</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Blackcap</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>393</xmin>
+			<ymin>434</ymin>
+			<xmax>525</xmax>
+			<ymax>520</ymax>
+		</bndbox>
+	</object>
+</annotation>

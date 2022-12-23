@@ -15,7 +15,7 @@
 		<name>Common_Dandelion</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>89</xmin>
 			<ymin>159</ymin>

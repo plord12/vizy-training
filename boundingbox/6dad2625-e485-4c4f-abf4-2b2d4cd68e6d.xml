@@ -15,7 +15,7 @@
 		<name>European_Robin</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>280</xmin>
 			<ymin>156</ymin>

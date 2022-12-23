@@ -15,7 +15,7 @@
 		<name>European_Starling</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>264</xmin>
 			<ymin>238</ymin>

@@ -23,4 +23,16 @@
 			<ymax>78</ymax>
 		</bndbox>
 	</object>
+	<object>
+		<name>Great_Tit</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>69</xmin>
+			<ymin>254</ymin>
+			<xmax>160</xmax>
+			<ymax>360</ymax>
+		</bndbox>
+	</object>
 </annotation>

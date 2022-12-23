@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>2022_12_21_10:44:10.3050105933.jpg</filename>
+	<path>images/all/2022_12_21_10:44:10.3050105933.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1024</width>
+		<height>576</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Wood_Pigeon</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>388</xmin>
+			<ymin>231</ymin>
+			<xmax>507</xmax>
+			<ymax>301</ymax>
+		</bndbox>
+	</object>
+</annotation>

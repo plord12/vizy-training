@@ -15,7 +15,7 @@
 		<name>Blue_Tit</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>261</xmin>
 			<ymin>88</ymin>
@@ -27,7 +27,7 @@
 		<name>Blue_Tit</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>311</xmin>
 			<ymin>183</ymin>
@@ -39,7 +39,7 @@
 		<name>Blue_Tit</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>323</xmin>
 			<ymin>64</ymin>

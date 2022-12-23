@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>baefce75-c5e5-449b-bb7f-14fabe0af03a.jpg</filename>
+	<path>images/all/baefce75-c5e5-449b-bb7f-14fabe0af03a.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>409</width>
+		<height>500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Blackcap</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>181</xmin>
+			<ymin>54</ymin>
+			<xmax>341</xmax>
+			<ymax>395</ymax>
+		</bndbox>
+	</object>
+</annotation>

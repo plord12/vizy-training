@@ -23,4 +23,28 @@
 			<ymax>230</ymax>
 		</bndbox>
 	</object>
+	<object>
+		<name>Eurasian_Goldfinch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>202</xmin>
+			<ymin>118</ymin>
+			<xmax>243</xmax>
+			<ymax>146</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Eurasian_Goldfinch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>176</xmin>
+			<ymin>168</ymin>
+			<xmax>217</xmax>
+			<ymax>196</ymax>
+		</bndbox>
+	</object>
 </annotation>

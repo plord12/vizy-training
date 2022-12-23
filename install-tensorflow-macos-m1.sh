@@ -51,7 +51,7 @@ conda activate tensorflow
 pip install --upgrade pip
 conda install --yes -c apple tensorflow-deps
 pip install tensorflow-macos==${TENSORFLOW_VER}
-pip install tensorflow-metal
+pip install tensorflow-metal==0.6.0
 
 #
 # from training course

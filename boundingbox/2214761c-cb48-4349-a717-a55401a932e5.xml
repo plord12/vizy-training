@@ -15,7 +15,7 @@
 		<name>Blue_Tit</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>127</xmin>
 			<ymin>151</ymin>

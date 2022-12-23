@@ -19,6 +19,9 @@ from tensorflow.lite.python.interpreter import Interpreter
 import matplotlib
 import matplotlib.pyplot as plt
 
+np.random.seed(42)
+random.seed(42)
+
 rootdir = os.getcwd()
 
 #
@@ -89,7 +92,7 @@ os.system('curl -s -L -O '+download_config)
 os.chdir(rootdir)
 
 # Set training parameters for the model
-num_steps = 50000
+num_steps = 60000
 
 if chosen_model == 'efficientdet-d0':
   # CPU only
@@ -247,7 +250,7 @@ def tflite_detect_images(modelpath, imgpath, lblpath, min_conf=0.5, num_test_ima
 
   # Loop over every image and perform detection
   for image_path in images_to_test:
-
+      print(image_path)
       # Load image and resize to expected shape [1xHxWx3]
       image = cv2.imread(image_path)
       image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)

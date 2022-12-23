@@ -21,10 +21,12 @@ Included are :
 * Eurasian Magpie :heavy_check_mark:
 * Long-tailed Tit :heavy_check_mark:
 
-Extra birds :
+Extra birds ( seen in my garden ) :
 
 * Red Kite :heavy_check_mark:
 * Grey Heron :heavy_check_mark:
+* Blackcap :heavy_check_mark:
+* Redwing :heavy_check_mark:
 
 Common garden animals :
 
@@ -32,6 +34,7 @@ Common garden animals :
 * Red Fox :heavy_check_mark:
 * Eastern Gray Squirrel :heavy_check_mark:
 * Domestic Cat :heavy_check_mark:
+* Person :heavy_check_mark:
 
 Weeds :
 

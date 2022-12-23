@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>f0d03b05-8bb6-4480-9096-f6cbb8796267.jpg</filename>
+	<path>images/all/f0d03b05-8bb6-4480-9096-f6cbb8796267.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>375</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Redwing</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>188</xmin>
+			<ymin>53</ymin>
+			<xmax>319</xmax>
+			<ymax>370</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -15,7 +15,7 @@
 		<name>Eurasian_Blackbird</name>
 		<pose>Unspecified</pose>
 		<truncated>1</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>147</xmin>
 			<ymin>70</ymin>

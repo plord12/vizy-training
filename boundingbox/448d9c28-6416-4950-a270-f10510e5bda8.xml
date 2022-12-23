@@ -15,7 +15,7 @@
 		<name>Common_Hedgehog</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>159</xmin>
 			<ymin>111</ymin>

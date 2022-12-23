@@ -13,6 +13,8 @@ import glob
 from pathlib import Path
 import random
 
+random.seed(42)
+
 #
 # download and extract tgz
 #
@@ -71,6 +73,8 @@ def copy_images(source, destination):
     #
     dirs['Red_Kite'] = '03172_Animalia_Chordata_Aves_Accipitriformes_Accipitridae_Milvus_milvus'
     dirs['Grey_Heron'] = '04356_Animalia_Chordata_Aves_Pelecaniformes_Ardeidae_Ardea_cinerea'
+    dirs['Blackcap'] = '04204_Animalia_Chordata_Aves_Passeriformes_Sylviidae_Sylvia_atricapilla'
+    dirs['Redwing'] = '04281_Animalia_Chordata_Aves_Passeriformes_Turdidae_Turdus_ignobilis'
 
     #
     # common garden animals
@@ -85,7 +89,7 @@ def copy_images(source, destination):
     #
     # from voc ... although dramaticly deacreases mAP
     #
-    # dirs['Person'] = 'VOCdevkit'
+    dirs['person'] = 'VOCdevkit'
 
     #
     # weeds
@@ -182,28 +186,28 @@ for thisdirpath, subdirs, files in os.walk('images'):
 #
 # download voc ( for people )
 #
-# download_extract_tar('http://host.robots.ox.ac.uk:8080/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar', 'VOCdevkit')
+download_extract_tar('http://host.robots.ox.ac.uk:8080/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar', 'VOCdevkit')
 
 #
 # copy any bounding boxes in
 #
-# print ('Finding only person')
-# pattern = re.compile(r'<name>([^<]*)</name>')
-# i=0
-# for filename in glob.glob('VOCdevkit/VOC2012/Annotations/*.xml'):
-#     with open(filename) as xmlfile:
-#         names = dict()
-#         contents = xmlfile.read()
-#         for (name) in re.findall(pattern, contents):
-#             names[name] = 1
-#         if len(names) == 1 and names.get('person') == 1 and i < 250:
-#             image='VOCdevkit/VOC2012/JPEGImages/'+(Path(filename).stem)+'.jpg'
-#             text_file = open(os.path.join(all_data_dir,Path(filename).name), "w")
-#             n = text_file.write(contents.replace('<name>person</name>', '<name>Person</name>'))
-#             text_file.close()
-#             #shutil.copy(filename, all_data_dir)
-#             shutil.copy(image, all_data_dir)
-#             i=i+1
+print ('Finding only person')
+pattern = re.compile(r'<name>([^<]*)</name>')
+i=0
+for filename in glob.glob('VOCdevkit/VOC2012/Annotations/*.xml'):
+    with open(filename) as xmlfile:
+        names = dict()
+        contents = xmlfile.read()
+        for (name) in re.findall(pattern, contents):
+            names[name] = 1
+        if len(names) == 1 and names.get('person') == 1 and i < 250:
+            image='VOCdevkit/VOC2012/JPEGImages/'+(Path(filename).stem)+'.jpg'
+            text_file = open(os.path.join(all_data_dir,Path(filename).name), "w")
+            n = text_file.write(contents.replace('<name>person</name>', '<name>Person</name>'))
+            text_file.close()
+            shutil.copy(filename, all_data_dir)
+            shutil.copy(image, all_data_dir)
+            i=i+1
 
 #
 # run labelImg
@@ -223,7 +227,26 @@ for thisdirpath, subdirs, files in os.walk('images'):
                 os.makedirs(os.path.dirname(dest), exist_ok=True)
                 shutil.copy(source, dest)
 
-os.system('mkdir -p images/train images/validation images/test')
+os.system('mkdir -p images/train images/validation images/test images/difficult')
+
+#
+# move difficult ones out of the way
+#
+for thisdirpath, subdirs, files in os.walk('images'):
+    for file in files:
+        if file.endswith(".xml"):
+            xml = os.path.join(thisdirpath, file)
+            jpg = os.path.join(thisdirpath,os.path.splitext(file)[0]+'.jpg')
+            difficult=False
+            with open(xml,'r') as file_in:
+                for line in file_in:
+                    newline = line
+                    if '<difficult>1</difficult>' in newline:
+                        difficult=True
+            if difficult:
+                shutil.move(xml, os.path.join("images/difficult", file))
+                shutil.move(jpg, os.path.join("images/difficult", os.path.splitext(file)[0]+'.jpg'))
+
 
 # Define paths to image folders
 image_path = 'images/all'

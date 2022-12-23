@@ -15,7 +15,7 @@
 		<name>Grey_Heron</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>187</xmin>
 			<ymin>104</ymin>

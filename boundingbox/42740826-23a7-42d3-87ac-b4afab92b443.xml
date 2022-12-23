@@ -15,7 +15,7 @@
 		<name>Domestic_Cat</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>163</xmin>
 			<ymin>150</ymin>

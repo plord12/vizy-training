@@ -15,7 +15,7 @@
 		<name>Wood_Pigeon</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>111</xmin>
 			<ymin>28</ymin>

@@ -15,7 +15,7 @@
 		<name>Red_Fox</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>84</xmin>
 			<ymin>20</ymin>

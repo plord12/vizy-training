@@ -15,7 +15,7 @@
 		<name>Domestic_Cat</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>134</xmin>
 			<ymin>329</ymin>
@@ -27,7 +27,7 @@
 		<name>Domestic_Cat</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>161</xmin>
 			<ymin>176</ymin>
@@ -39,7 +39,7 @@
 		<name>Domestic_Cat</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>159</xmin>
 			<ymin>110</ymin>
@@ -51,7 +51,7 @@
 		<name>Domestic_Cat</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
 			<xmin>129</xmin>
 			<ymin>21</ymin>

@@ -6,21 +6,21 @@
 		<database>Unknown</database>
 	</source>
 	<size>
-		<width>5888</width>
-		<height>3312</height>
+		<width>1024</width>
+		<height>576</height>
 		<depth>3</depth>
 	</size>
 	<segmented>0</segmented>
 	<object>
 		<name>Red_Fox</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
+		<truncated>1</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>37</xmin>
-			<ymin>1032</ymin>
-			<xmax>1797</xmax>
-			<ymax>1825</ymax>
+			<xmin>1</xmin>
+			<ymin>183</ymin>
+			<xmax>310</xmax>
+			<ymax>325</ymax>
 		</bndbox>
 	</object>
 </annotation>
