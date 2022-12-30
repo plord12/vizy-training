@@ -27,6 +27,7 @@ Extra birds ( seen in my garden ) :
 * Grey Heron :heavy_check_mark:
 * Blackcap :heavy_check_mark:
 * Redwing :heavy_check_mark:
+* Eurasian Green Woodpecker :heavy_check_mark:
 
 Common garden animals :
 

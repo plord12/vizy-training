@@ -75,6 +75,7 @@ def copy_images(source, destination):
     dirs['Grey_Heron'] = '04356_Animalia_Chordata_Aves_Pelecaniformes_Ardeidae_Ardea_cinerea'
     dirs['Blackcap'] = '04204_Animalia_Chordata_Aves_Passeriformes_Sylviidae_Sylvia_atricapilla'
     dirs['Redwing'] = '04281_Animalia_Chordata_Aves_Passeriformes_Turdidae_Turdus_ignobilis'
+    dirs['Eurasian_Green_Woodpecker'] = '04462_Animalia_Chordata_Aves_Piciformes_Picidae_Picus_viridis'
 
     #
     # common garden animals
@@ -89,7 +90,7 @@ def copy_images(source, destination):
     #
     # from voc ... although dramaticly deacreases mAP
     #
-    dirs['person'] = 'VOCdevkit'
+    dirs['Person'] = 'VOCdevkit'
 
     #
     # weeds
@@ -205,7 +206,6 @@ for filename in glob.glob('VOCdevkit/VOC2012/Annotations/*.xml'):
             text_file = open(os.path.join(all_data_dir,Path(filename).name), "w")
             n = text_file.write(contents.replace('<name>person</name>', '<name>Person</name>'))
             text_file.close()
-            shutil.copy(filename, all_data_dir)
             shutil.copy(image, all_data_dir)
             i=i+1
 

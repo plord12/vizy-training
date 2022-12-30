@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>013f8e11-c9c7-4956-9bb9-3f92b8679518.jpg</filename>
+	<path>images/all/013f8e11-c9c7-4956-9bb9-3f92b8679518.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>430</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Eurasian_Green_Woodpecker</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>170</xmin>
+			<ymin>24</ymin>
+			<xmax>382</xmax>
+			<ymax>404</ymax>
+		</bndbox>
+	</object>
+</annotation>
