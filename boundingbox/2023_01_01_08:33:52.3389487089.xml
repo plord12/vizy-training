@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>2023_01_01_08:33:52.3389487089.jpg</filename>
+	<path>images/all/2023_01_01_08:33:52.3389487089.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>5888</width>
+		<height>3312</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Grey_Heron</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2872</xmin>
+			<ymin>1403</ymin>
+			<xmax>3688</xmax>
+			<ymax>1855</ymax>
+		</bndbox>
+	</object>
+</annotation>
