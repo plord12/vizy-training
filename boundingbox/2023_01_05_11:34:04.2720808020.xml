@@ -6,21 +6,21 @@
 		<database>Unknown</database>
 	</source>
 	<size>
-		<width>5888</width>
-		<height>3312</height>
+		<width>1024</width>
+		<height>576</height>
 		<depth>3</depth>
 	</size>
 	<segmented>0</segmented>
 	<object>
 		<name>Eurasian_Magpie</name>
 		<pose>Unspecified</pose>
-		<truncated>0</truncated>
+		<truncated>1</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>4272</xmin>
-			<ymin>2050</ymin>
-			<xmax>5878</xmax>
-			<ymax>3250</ymax>
+			<xmin>744</xmin>
+			<ymin>355</ymin>
+			<xmax>1024</xmax>
+			<ymax>562</ymax>
 		</bndbox>
 	</object>
 </annotation>

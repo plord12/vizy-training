@@ -12,15 +12,15 @@
 	</size>
 	<segmented>0</segmented>
 	<object>
-		<name>Person</name>
+		<name>Eurasian_Collared_Dove</name>
 		<pose>Unspecified</pose>
-		<truncated>1</truncated>
-		<difficult>0</difficult>
+		<truncated>0</truncated>
+		<difficult>1</difficult>
 		<bndbox>
-			<xmin>1</xmin>
-			<ymin>1</ymin>
-			<xmax>447</xmax>
-			<ymax>563</ymax>
+			<xmin>408</xmin>
+			<ymin>260</ymin>
+			<xmax>523</xmax>
+			<ymax>334</ymax>
 		</bndbox>
 	</object>
 </annotation>

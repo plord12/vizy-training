@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>b293a90d-7bad-4610-8633-62a7b8303e23.jpg</filename>
+	<path>images/all/b293a90d-7bad-4610-8633-62a7b8303e23.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>342</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Eurasian_Collared_Dove</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>128</xmin>
+			<ymin>70</ymin>
+			<xmax>414</xmax>
+			<ymax>233</ymax>
+		</bndbox>
+	</object>
+</annotation>

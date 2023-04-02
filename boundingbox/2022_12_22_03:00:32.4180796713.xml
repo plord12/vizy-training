@@ -15,12 +15,12 @@
 		<name>Domestic_Cat</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
-			<xmin>5</xmin>
-			<ymin>28</ymin>
-			<xmax>756</xmax>
-			<ymax>566</ymax>
+			<xmin>2</xmin>
+			<ymin>35</ymin>
+			<xmax>746</xmax>
+			<ymax>555</ymax>
 		</bndbox>
 	</object>
 </annotation>

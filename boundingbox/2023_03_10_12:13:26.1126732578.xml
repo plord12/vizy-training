@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>2023_03_10_12:13:26.1126732578.jpg</filename>
+	<path>images/all/2023_03_10_12:13:26.1126732578.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1024</width>
+		<height>576</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Eastern_Gray_Squirrel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>311</xmin>
+			<ymin>242</ymin>
+			<xmax>492</xmax>
+			<ymax>342</ymax>
+		</bndbox>
+	</object>
+</annotation>

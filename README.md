@@ -28,6 +28,7 @@ Extra birds ( seen in my garden ) :
 * Blackcap :heavy_check_mark:
 * Redwing :heavy_check_mark:
 * Eurasian Green Woodpecker :heavy_check_mark:
+* Eurasian Collared Dove :heavy_check_mark:
 
 Common garden animals :
 
@@ -35,6 +36,7 @@ Common garden animals :
 * Red Fox :heavy_check_mark:
 * Eastern Gray Squirrel :heavy_check_mark:
 * Domestic Cat :heavy_check_mark:
+* Brown Rat :heavy_check_mark:
 * Person :heavy_check_mark:
 
 Weeds :

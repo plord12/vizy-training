@@ -37,8 +37,17 @@ label_map_pbtxt_fname = rootdir+'/labelmap.pbtxt'
 # 4. Set Up Training Configuration
 #
 
+# https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md
+# https://github.com/tensorflow/models/tree/master/community
+
+
+# 
 # Change the chosen_model variable to deploy different models available in the TF2 object detection zoo
-chosen_model = 'ssd-mobilenet-v2-fpnlite-320'
+chosen_model = 'ssd-mobilenet-v2-fpnlite-320' # 85.80
+#chosen_model = 'ssd-mobilenet-v2' # 68.77
+#chosen_model = 'efficientdet-d0' # 18.15
+#chosen_model = 'centernet-mobilenet-v2' # fails
+#chosen_model = 'ssd-resnet50-v1' # fails
 
 MODELS_CONFIG = {
     'ssd-mobilenet-v2': {
@@ -55,6 +64,11 @@ MODELS_CONFIG = {
         'model_name': 'ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8',
         'base_pipeline_file': 'ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8.config',
         'pretrained_checkpoint': 'ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8.tar.gz',
+    },
+    'ssd-resnet50-v1': {
+        'model_name': 'ssd_resnet50_v1_fpn_640x640_coco17_tpu-8',
+        'base_pipeline_file': 'ssd_resnet152_v1_fpn_640x640_coco17_tpu-8.config',
+        'pretrained_checkpoint': 'ssd_resnet50_v1_fpn_640x640_coco17_tpu-8.tar.gz',
     },
     # The centernet model isn't working as of 9/10/22
     'centernet-mobilenet-v2': {
@@ -92,16 +106,16 @@ os.system('curl -s -L -O '+download_config)
 os.chdir(rootdir)
 
 # Set training parameters for the model
-num_steps = 60000
+num_steps = 100000
 
 if chosen_model == 'efficientdet-d0':
   # CPU only
   batch_size = 4
-  os.system('pip remove tensorflow-metal')
+  os.system('pip uninstall tensorflow-metal')
 else:
   # GPU or CPU
   batch_size = 16
-  os.system('pip install tensorflow-metal')
+  os.system('pip install tensorflow-metal==0.6.0')
 
 # Set file locations and get number of classes for config file
 pipeline_fname = rootdir+'/models/mymodel/' + base_pipeline_file

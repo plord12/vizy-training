@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>2023_02_11_12:57:32.1593984595.jpg</filename>
+	<path>images/all/2023_02_11_12:57:32.1593984595.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1024</width>
+		<height>576</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Eurasian_Magpie</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>744</xmin>
+			<ymin>258</ymin>
+			<xmax>922</xmax>
+			<ymax>447</ymax>
+		</bndbox>
+	</object>
+</annotation>

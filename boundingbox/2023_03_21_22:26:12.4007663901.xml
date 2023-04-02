@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>2023_03_21_22:26:12.4007663901.jpg</filename>
+	<path>images/all/2023_03_21_22:26:12.4007663901.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1024</width>
+		<height>576</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Common_Hedgehog</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>439</xmin>
+			<ymin>341</ymin>
+			<xmax>589</xmax>
+			<ymax>436</ymax>
+		</bndbox>
+	</object>
+</annotation>

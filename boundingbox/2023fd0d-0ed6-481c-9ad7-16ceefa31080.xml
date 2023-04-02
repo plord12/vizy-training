@@ -1,7 +1,7 @@
 <annotation>
-	<folder>House Sparrow</folder>
+	<folder>tmp</folder>
 	<filename>2023fd0d-0ed6-481c-9ad7-16ceefa31080.jpg</filename>
-	<path>images/training/2023fd0d-0ed6-481c-9ad7-16ceefa31080.jpg</path>
+	<path>images/all/2023fd0d-0ed6-481c-9ad7-16ceefa31080.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -12,15 +12,15 @@
 	</size>
 	<segmented>0</segmented>
 	<object>
-		<name>House_Sparrow</name>
+		<name>Eurasian_Goldfinch</name>
 		<pose>Unspecified</pose>
 		<truncated>1</truncated>
-		<difficult>0</difficult>
+		<difficult>1</difficult>
 		<bndbox>
-			<xmin>75</xmin>
-			<ymin>67</ymin>
+			<xmin>77</xmin>
+			<ymin>72</ymin>
 			<xmax>500</xmax>
-			<ymax>225</ymax>
+			<ymax>228</ymax>
 		</bndbox>
 	</object>
 </annotation>

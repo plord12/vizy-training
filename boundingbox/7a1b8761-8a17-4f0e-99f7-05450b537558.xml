@@ -1,0 +1,26 @@
+<annotation>
+	<folder>tmp</folder>
+	<filename>7a1b8761-8a17-4f0e-99f7-05450b537558.jpg</filename>
+	<path>images/all/7a1b8761-8a17-4f0e-99f7-05450b537558.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>375</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Brown_Rat</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>40</ymin>
+			<xmax>364</xmax>
+			<ymax>374</ymax>
+		</bndbox>
+	</object>
+</annotation>

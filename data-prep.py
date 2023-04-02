@@ -57,7 +57,6 @@ def copy_images(source, destination):
     dirs['Eurasian_Magpie'] = '03775_Animalia_Chordata_Aves_Passeriformes_Corvidae_Pica_pica'
     dirs['Long-tailed_Tit'] = '03688_Animalia_Chordata_Aves_Passeriformes_Aegithalidae_Aegithalos_caudatus'
 
-    # Collared Dove
     # Greenfinch
     # Bullfinch
     # Wren
@@ -76,6 +75,7 @@ def copy_images(source, destination):
     dirs['Blackcap'] = '04204_Animalia_Chordata_Aves_Passeriformes_Sylviidae_Sylvia_atricapilla'
     dirs['Redwing'] = '04281_Animalia_Chordata_Aves_Passeriformes_Turdidae_Turdus_ignobilis'
     dirs['Eurasian_Green_Woodpecker'] = '04462_Animalia_Chordata_Aves_Piciformes_Picidae_Picus_viridis'
+    dirs['Eurasian_Collared_Dove'] = '03536_Animalia_Chordata_Aves_Columbiformes_Columbidae_Streptopelia_decaocto'
 
     #
     # common garden animals
@@ -84,6 +84,7 @@ def copy_images(source, destination):
     dirs['Red_Fox'] = '04677_Animalia_Chordata_Mammalia_Carnivora_Canidae_Vulpes_vulpes'
     dirs['Eastern_Gray_Squirrel'] = '04844_Animalia_Chordata_Mammalia_Rodentia_Sciuridae_Sciurus_carolinensis'
     dirs['Domestic_Cat'] = '04679_Animalia_Chordata_Mammalia_Carnivora_Felidae_Felis_catus'
+    dirs['Brown_Rat'] = '04814_Animalia_Chordata_Mammalia_Rodentia_Muridae_Rattus_norvegicus'
 
     #
     # people
